@@ -1,21 +1,22 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import Header from './components/Header/heder.tsx'
-import FirstBlok from './components/FirstBlock/FirstBlock.tsx'
-import Sekond_blok from './components/SecondBlock/SecondBlock.tsx'
-import FerdBlok from './components/ReviewSection/ReviewSection.tsx'
-import SerdBlok from './components/ThirdBlock/ThirdBlock.tsx'
-import Footer from './components/Footer/Footer.tsx'
-import RegistrationBlock from './components/RegistrationBlock/RegistrationBlock.tsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/heder.tsx';
+import Footer from './components/Footer/Footer.tsx';
+import Home from './pages/Home.tsx'; 
+import About from './pages/About.tsx'; 
+import Contact from './pages/Contact.tsx'; 
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Header />
-    <FirstBlok />
-    <Sekond_blok />
-    <SerdBlok />    
-    <FerdBlok />
-    <RegistrationBlock />
-    <Footer />
-  </StrictMode>,
-)
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </Router>
+  </StrictMode>
+);

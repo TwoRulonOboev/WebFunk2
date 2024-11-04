@@ -1,4 +1,12 @@
 /* Header.module.css */
+.navLink {
+  text-decoration: none; 
+  color: white; 
+}
+
+.navText {
+  color: white; 
+}
 
 .container {
   width: 100%;
