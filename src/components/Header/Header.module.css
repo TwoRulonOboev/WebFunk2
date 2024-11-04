@@ -1,0 +1,72 @@
+/* Header.module.css */
+
+.container {
+  width: 100%;
+  background-color: #00a6a6;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navLinks {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.navLinks li {
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navLinks li:hover {
+  color: #e0e0e0;
+}
+
+.contactButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #00a6a6;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f0f0f0;
+}
+
+.callBtn {
+  background-color: #007474;
+  color: #fff;
+  font-weight: bold;
+}
+
+.callBtn:hover {
+  background-color: #005a5a;
+}

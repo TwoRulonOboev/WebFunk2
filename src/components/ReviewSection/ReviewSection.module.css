@@ -1,0 +1,91 @@
+/* Общие стили */
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #eee;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* ReviewSection.module.css */
+
+.container {
+  text-align: center;
+  padding: 40px 20px; 
+}
+
+.swiper {
+  width: 50%; 
+  max-width: 800px; 
+  height: 100%; 
+  margin: 0 auto; 
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100%; 
+  height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  border-radius: 50%; 
+}
+
+/* Контент внутри слайда */
+.slideContent {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slideContent h2 {
+  font-size: 1.5rem; 
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+.slideContent p {
+  font-size: 1rem; 
+  color: #666; 
+  margin: 5px 0; 
+}
+
+/* Дополнительные стили для отзывов */
+.fio {
+  font-weight: bold; 
+  color: #00a6a6; 
+}
+
+.firms {
+  font-size: 0.9rem; 
+  color: #999; 
+  margin-top: 5px; 
+}

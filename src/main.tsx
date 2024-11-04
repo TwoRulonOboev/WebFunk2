@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Header from './components/heder.tsx'
-import FirstBlok from './components/first_blok.tsx'
-import Sekond_blok from './components/sekond_blok.tsx'
-import FerdBlok from './components/ferd_blok.tsx'
-import SerdBlok from './components/serd_blok.tsx'
+import Header from './components/Header/heder.tsx'
+import FirstBlok from './components/FirstBlock/FirstBlock.tsx'
+import Sekond_blok from './components/SecondBlock/SecondBlock.tsx'
+import FerdBlok from './components/ReviewSection/ReviewSection.tsx'
+import SerdBlok from './components/ThirdBlock/ThirdBlock.tsx'
+import Footer from './components/Footer/Footer.tsx'
+import RegistrationBlock from './components/RegistrationBlock/RegistrationBlock.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,5 +15,7 @@ createRoot(document.getElementById('root')!).render(
     <Sekond_blok />
     <SerdBlok />    
     <FerdBlok />
+    <RegistrationBlock />
+    <Footer />
   </StrictMode>,
 )
